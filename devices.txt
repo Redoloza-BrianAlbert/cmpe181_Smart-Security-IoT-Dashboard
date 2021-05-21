@@ -1,0 +1,47 @@
+{
+  "deviceID": "SL001",
+  "deviceType": "smartLock",
+  "lock_condition": "1",
+  "active": "1",
+  "location": "FRONT DOOR"
+}
+{
+  "deviceID": "SL002",
+  "deviceType": "smartLock",
+  "lock_condition": "0",
+  "active": "1",
+  "location": "BACKYARD GATE"
+}
+{
+  "deviceID": "SL003",
+  "deviceType": "smartLock",
+  "lock_condition": "0",
+  "active": "0",
+  "location": "KITCHEN SINK WINDOW"
+}
+
+
+{
+  "deviceID": "MS001",
+  "deviceType": "smartUltraSensor",
+  "default_distance": "5",
+  "current_distance": "5",
+  "active": "0",
+  "location": "BACKYARD"
+}
+{
+  "deviceID": "MS002",
+  "deviceType": "smartUltraSensor",
+  "default_distance": "0.7",
+  "current_distance": "0.7",
+  "active": "1",
+  "location": "GARAGE DRIVEWAY"
+}
+{
+  "deviceID": "MS003",
+  "deviceType": "smartUltraSensor",
+  "default_distance": "5",
+  "current_distance": "7",
+  "active": "1",
+  "location": "NORTH SIDE ENTRANCE"
+}
