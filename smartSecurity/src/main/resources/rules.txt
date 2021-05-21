@@ -1,0 +1,25 @@
+Role: smartManager
+
+
+Table: smartLocks
+Topic: smartSecurity
+
+Rule: smart_lock_condition_ddb
+  SELECT * FROM 'smartSecurity/smartLocks' WHERE lock_condition = 0
+
+Rule: smart_lock_activation_ddb
+  SELECT * FROM 'smartSecurity' WHERE active = 1 AND deviceType = 'smartLock'
+
+Rule: smart_lock_condition_notify
+  SELECT * FROM 'smartSecurity' WHERE lock_condition = 0 AND active = 1
+
+
+
+Table: smartUltraSensors
+Topic: smartSecurity
+
+Rule: smart_ultrasonics_alert_ddb
+  SELECT * FROM 'smartSecurity' WHERE current_distance <> default_distance
+
+Rule: smart_ultrasonics_activation_ddb
+  SELECT * FROM 'smartSecurity' WHERE active = 1 AND deviceType = 'smartUltraSensor'
