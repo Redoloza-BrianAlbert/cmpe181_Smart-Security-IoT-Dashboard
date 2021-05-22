@@ -132,7 +132,7 @@ public class SmartSecurity {
 		        	    	}
 		        	    	if (turn == smartUltraSensorsTableName) {
 		        	    		String condition = "DISTURBED";
-		        	    		if (item.getInt("default_distance") != item.getInt("current_distance"))
+		        	    		if (item.getDouble("default_distance") == item.getDouble("current_distance"))
 		        	    			condition = "UNDISTURBED";
 		        	    		System.out.println("------------------------------------------------");
 		        	    		System.out.println("Device ID: " + item.get("deviceID") + " | Location: " + item.get("location") +" "

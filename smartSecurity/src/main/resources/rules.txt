@@ -14,7 +14,6 @@ Rule: smart_lock_condition_notify
   SELECT * FROM 'smartSecurity' WHERE lock_condition = 0 AND active = 1
 
 
-
 Table: smartUltraSensors
 Topic: smartSecurity
 
